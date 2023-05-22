@@ -1,4 +1,4 @@
-<h1>Bismillah</h1>
+<h1>My website</h1>
 
 
 <script>
@@ -20,16 +20,16 @@
 <style>
 button {
 	display: flex;
-    text-align: center;
 	align-items: center;
+
 }
 h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 :global(body) {
     background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.redbubble.com%2Fi%2Fgreeting-card%2Fchairman-lebron-mao-by-ahmadsingh69%2F48862133.5MT14&psig=AOvVaw0AqrJSeGg7HmO2FPl8M9Na&ust=1684328338573000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMC-0JTy-f4CFQAAAAAdAAAAABAE");
-    background-position: 0%;
+    background-size: cover;
 }
 
 
