@@ -1,5 +1,5 @@
-<h1>Min nettside</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Bismillah</h1>
+
 
 <script>
 	let count = 0;
@@ -8,7 +8,6 @@
 		alert(`count is dangerously high!`);
 		count = 9;
 	}
-
 	function handleClick() {
 		count += 1;
 	}
@@ -20,9 +19,9 @@
 
 <style>
 button {
+	display: flex;
     text-align: center;
-    display: flex;
-
+	align-items: center;
 }
 h1 {
     font-family: 'Courier New', Courier, monospace;
@@ -32,4 +31,6 @@ h1 {
     background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.redbubble.com%2Fi%2Fgreeting-card%2Fchairman-lebron-mao-by-ahmadsingh69%2F48862133.5MT14&psig=AOvVaw0AqrJSeGg7HmO2FPl8M9Na&ust=1684328338573000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMC-0JTy-f4CFQAAAAAdAAAAABAE");
     background-position: 0%;
 }
+
+
 </style>
