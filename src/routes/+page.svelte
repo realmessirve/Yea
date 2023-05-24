@@ -3,20 +3,22 @@
 // Import the necessary libraries
 import { onMount } from 'svelte';
 // shy header import
-import Header from '$lib/components/Header.svelte';
+ import Header from './Header.svelte';
+ import Footer from './Footer.svelte';
 
 
 // Declare a variable to store the fetched data
 let exercises = [];
 // Fetch data from the ExerciseAPI3
 onMount(async () => {
-  const apiKey = 'YOUR_API_KEY'; 
+  const apiKey = '9a9af9e7a1msh02f136f7f0af882p151f13jsncb71b401ede3'; 
   const url = 'https://exerciseapi.p.rapidapi.com/exercises'; // API endpoint
 
   try {
     const response = await fetch(url, {
       headers: {
-        'X-RapidAPI-Key': apiKey
+        'X-RapidAPI-Key': '9a9af9e7a1msh02f136f7f0af882p151f13jsncb71b401ede3',
+
       }
     });
 
@@ -32,41 +34,43 @@ onMount(async () => {
 </script>
 
 <!-- selve koden--> 
+
+
 <Header />
-<main class="container" />
- 
-<h1>GetWell</h1>
+
 <br>
 <br>
 <br>
+<br>
+<br>
+<h1>Hva vil du lære om?</h1>
 <div class="container">
 <div class="box">
-	<slot>Placeholder</slot>
+	<slot><img src="Blog-Deadlifting-Male_1800x672_1200x672_acf_cropped.jpg" alt="styrke" height="300px"></slot>
 </div>
 <div class="box">
-	<slot>Placeholder</slot>
+	<slot><img src="/salad.jpeg" alt="diett" height="300px"></slot>
 </div>
 <div class="box">
-	<slot>Placeholder</slot>
+	<slot><img src="/runnin.jpeg" alt="cardio" height="300px"></slot>
 </div>
 </div>
-<div class="footer">
-	<p>lebroncabron</p>
-</div>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos culpa eum, ratione voluptas corrupti molestias aperiam dolorum esse labore iusto ad rem animi velit. Asperiores placeat laborum recusandae aliquam ex.</p>
+<Footer />
+
 <style>
 .box {
 	display: flex;
 	align-items: center;
 	justify-content: row;
 	justify-content: center;
-	width: 300px;
-	border: 1px solid #aaa;
+	border: 1px solid grey;
 	border-radius: 25px;
 	box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 	padding: 1em;
 	margin: 0 0 1em 0;
 	font-family: 'Futura';
-	background-color: #aaa;
+	background-color: #887d7d;
 
 }
 .container {
@@ -82,28 +86,10 @@ h1 {
 }
 :global(body){
 	text-align: center;
-	background-color: #C8E1E2;
-	
-
+	background-color: #bee9ea;
+  font-family: 'Futura';
 }
 
-.footer {
-  width: 100%;
-  height: 8rem;
-  background-color: #83dfa2;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 15px;
-  color: rgb(38, 37, 37);
-  font-family:'Futura';
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 
-}
 
 </style>
