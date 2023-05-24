@@ -2,10 +2,12 @@
 <script>
 // Import the necessary libraries
 import { onMount } from 'svelte';
+// shy header import
+import Header from '$lib/components/Header.svelte';
+
 
 // Declare a variable to store the fetched data
 let exercises = [];
-
 // Fetch data from the ExerciseAPI3
 onMount(async () => {
   const apiKey = 'YOUR_API_KEY'; 
@@ -30,7 +32,9 @@ onMount(async () => {
 </script>
 
 <!-- selve koden--> 
-
+<Header />
+<main class="container" />
+ 
 <h1>GetWell</h1>
 <br>
 <br>
@@ -43,7 +47,7 @@ onMount(async () => {
 	<slot>Placeholder</slot>
 </div>
 <div class="box">
-	<slot><img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.taste.com.au%2Fgpe52rFs%2Ftaste%2F2017%2F09%2Feasy-beef-and-quinoa-salad-bowl-130828-2.jpg&tbnid=TBtZoxAJimmO2M&vet=12ahUKEwj_3a2t3Y3_AhUimIsKHSkECPkQMygAegUIARDVAQ..i&imgrefurl=https%3A%2F%2Fwww.taste.com.au%2Fgalleries%2F10-deliciously-easy-make-home-salad-bowls%2FtbzKh8nZ&docid=q7SmfhhTIQI1mM&w=1980&h=1320&q=salad%20bowl&ved=2ahUKEwj_3a2t3Y3_AhUimIsKHSkECPkQMygAegUIARDVAQ" alt=""></slot>
+	<slot>Placeholder</slot>
 </div>
 </div>
 <div class="footer">
@@ -82,20 +86,6 @@ h1 {
 	
 
 }
-.header {
-	display: flex;
-    text-align: center;
-    align-items: center;
-    font-size: xx-large;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 950;
-	
-}
 
 .footer {
   width: 100%;
@@ -115,4 +105,5 @@ h1 {
   align-items: center;
 
 }
+
 </style>
