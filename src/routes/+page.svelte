@@ -37,14 +37,17 @@ onMount(async () => {
 <br>
 <div class="container">
 <div class="box">
-	<slot>hei</slot>
+	<slot>Placeholder</slot>
 </div>
 <div class="box">
-	<slot>hei</slot>
+	<slot>Placeholder</slot>
 </div>
 <div class="box">
-	<slot><img src="/" alt=""></slot>
+	<slot><img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.taste.com.au%2Fgpe52rFs%2Ftaste%2F2017%2F09%2Feasy-beef-and-quinoa-salad-bowl-130828-2.jpg&tbnid=TBtZoxAJimmO2M&vet=12ahUKEwj_3a2t3Y3_AhUimIsKHSkECPkQMygAegUIARDVAQ..i&imgrefurl=https%3A%2F%2Fwww.taste.com.au%2Fgalleries%2F10-deliciously-easy-make-home-salad-bowls%2FtbzKh8nZ&docid=q7SmfhhTIQI1mM&w=1980&h=1320&q=salad%20bowl&ved=2ahUKEwj_3a2t3Y3_AhUimIsKHSkECPkQMygAegUIARDVAQ" alt=""></slot>
 </div>
+</div>
+<div class="footer">
+	<p>lebroncabron</p>
 </div>
 <style>
 .box {
@@ -66,6 +69,7 @@ onMount(async () => {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	
 }
 
 h1 {
@@ -76,6 +80,39 @@ h1 {
 	text-align: center;
 	background-color: #C8E1E2;
 	
+
+}
+.header {
+	display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 950;
+	
+}
+
+.footer {
+  width: 100%;
+  height: 8rem;
+  background-color: #83dfa2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 15px;
+  color: rgb(38, 37, 37);
+  font-family:'Futura';
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 
 }
 </style>
