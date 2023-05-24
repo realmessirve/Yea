@@ -1,36 +1,81 @@
-<h1>My website</h1>
-
 
 <script>
-	let count = 0;
+// Import the necessary libraries
+import { onMount } from 'svelte';
 
-	$: if (count >= 10) {
-		alert(`count is dangerously high!`);
-		count = 9;
-	}
-	function handleClick() {
-		count += 1;
-	}
+// Declare a variable to store the fetched data
+let exercises = [];
+
+// Fetch data from the ExerciseAPI3
+onMount(async () => {
+  const apiKey = 'YOUR_API_KEY'; 
+  const url = 'https://exerciseapi.p.rapidapi.com/exercises'; // API endpoint
+
+  try {
+    const response = await fetch(url, {
+      headers: {
+        'X-RapidAPI-Key': apiKey
+      }
+    });
+
+    if (response.ok) {
+      exercises = await response.json();
+    } else {
+      console.error('Error:', response.status);
+    }
+  } catch (error) {
+    console.error('Error:', error);
+  }
+});
 </script>
 
-<button on:click={handleClick}>
-	Clicked {count} {count === 1 ? 'time' : 'times'}
-</button>
+<!-- selve koden--> 
 
+<h1>GetWell</h1>
+<br>
+<br>
+<br>
+<div class="container">
+<div class="box">
+	<slot>hei</slot>
+</div>
+<div class="box">
+	<slot>hei</slot>
+</div>
+<div class="box">
+	<slot><img src="/" alt=""></slot>
+</div>
+</div>
 <style>
-button {
+.box {
 	display: flex;
 	align-items: center;
+	justify-content: row;
+	justify-content: center;
+	width: 300px;
+	border: 1px solid #aaa;
+	border-radius: 25px;
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+	padding: 1em;
+	margin: 0 0 1em 0;
+	font-family: 'Futura';
+	background-color: #aaa;
 
 }
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Futura';
     text-align: center;
 }
-:global(body) {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.redbubble.com%2Fi%2Fgreeting-card%2Fchairman-lebron-mao-by-ahmadsingh69%2F48862133.5MT14&psig=AOvVaw0AqrJSeGg7HmO2FPl8M9Na&ust=1684328338573000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMC-0JTy-f4CFQAAAAAdAAAAABAE");
-    background-size: cover;
+:global(body){
+	text-align: center;
+	background-color: #C8E1E2;
+	
+
 }
-
-
 </style>
