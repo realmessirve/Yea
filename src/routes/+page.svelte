@@ -2,7 +2,7 @@
 <script>
 // Import the necessary libraries
 import { onMount } from 'svelte';
-// shy header import
+// header import
  import Header from './Header.svelte';
  import Footer from './Footer.svelte';
 
@@ -48,19 +48,19 @@ onMount(async () => {
   <div class="box">
     <slot>
       <img src="Blog-Deadlifting-Male_1800x672_1200x672_acf_cropped.jpg" alt="styrke" height="230px">
-      <div class="overlay">Styrketrening</div>
+      <div class="overlay"><a href="/strength.svelte">Styrketrening</a></div>
     </slot>
   </div>
   <div class="box">
     <slot>
       <img src="/salad.jpeg" alt="diett" height="230px">
-      <div class="overlay">Helse og næring</div>
+      <div class="overlay"><a href="/diet.svelte">helse og næring</a></div>
     </slot>
   </div>
   <div class="box">
     <slot>
       <img src="/runnin.jpeg" alt="cardio" height="230px">
-      <div class="overlay">Cardio</div>
+      <div class="overlay"><a href="/Cardio.svelte">Cardio</a></div>
     </slot>
   </div>
 </div>
@@ -101,6 +101,10 @@ onMount(async () => {
   font-weight: bold;
   color: #000;
   z-index: 2;
+}
+a {
+  color: #5ebfb9;
+  
 }
 
 

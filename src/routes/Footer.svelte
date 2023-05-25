@@ -1,12 +1,12 @@
 <footer>
-    <p>bismillah industries 2021-2023</p>
+    <p>Daniel 2021-2023</p>
 </footer>
 
 
 <style>
     footer {
   width: 100%;
-  height: 8rem;
+  height: 5rem;
   background-color: #51beacca;
   padding: 20px;
   border: 1px solid #ccc;
