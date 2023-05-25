@@ -3,8 +3,8 @@
 // Import the necessary libraries
 import { onMount } from 'svelte';
 // header import
- import Header from './Header.svelte';
- import Footer from './Footer.svelte';
+ import Header from '../components/Header.svelte';
+ import Footer from '../components/Footer.svelte';
 //  import Cardio from './Cardio.svelte';
 //  import Diet from './diet.svelte';
 //  import Strength from './strength.svelte';
