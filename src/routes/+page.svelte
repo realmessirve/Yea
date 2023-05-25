@@ -5,6 +5,9 @@ import { onMount } from 'svelte';
 // header import
  import Header from './Header.svelte';
  import Footer from './Footer.svelte';
+//  import Cardio from './Cardio.svelte';
+//  import Diet from './diet.svelte';
+//  import Strength from './strength.svelte';
 
 
 // Declare a variable to store the fetched data
@@ -48,19 +51,19 @@ onMount(async () => {
   <div class="box">
     <slot>
       <img src="Blog-Deadlifting-Male_1800x672_1200x672_acf_cropped.jpg" alt="styrke" height="230px">
-      <div class="overlay"><a href="/strength.svelte">Styrketrening</a></div>
+      <div class="overlay"><a href="./styrke">Styrketrening</a></div>
     </slot>
   </div>
   <div class="box">
     <slot>
       <img src="/salad.jpeg" alt="diett" height="230px">
-      <div class="overlay"><a href="/diet.svelte">helse og næring</a></div>
+      <div class="overlay"><a href="./helseognaering">helse og næring</a></div>
     </slot>
   </div>
   <div class="box">
     <slot>
       <img src="/runnin.jpeg" alt="cardio" height="230px">
-      <div class="overlay"><a href="/Cardio.svelte">Cardio</a></div>
+      <div class="overlay"><a href="./cardio">Cardio</a></div>
     </slot>
   </div>
 </div>
@@ -104,22 +107,13 @@ onMount(async () => {
 }
 a {
   color: #5ebfb9;
-  
-}
 
-
-
-h1 {
-    font-family: 'Futura';
-    text-align: center;
 }
 
 :global(body){
 	text-align: center;
-	background-color: #bee9ea;
+	background-color: #dbf0f0;
   font-family: 'Futura';
 }
-
-
 
 </style>
