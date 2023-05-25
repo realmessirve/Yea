@@ -4,7 +4,7 @@
 
 <header>
 	<h1>
-		GetWell
+		GetWell.no
 	</h1>
 </header>
 

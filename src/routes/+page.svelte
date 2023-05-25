@@ -5,9 +5,6 @@ import { onMount } from 'svelte';
 // header import
  import Header from '../components/Header.svelte';
  import Footer from '../components/Footer.svelte';
-//  import Cardio from './Cardio.svelte';
-//  import Diet from './diet.svelte';
-//  import Strength from './strength.svelte';
 
 
 // Declare a variable to store the fetched data
@@ -40,7 +37,6 @@ onMount(async () => {
 
 
 <Header />
-
 <br>
 <br>
 <br>
@@ -76,7 +72,6 @@ onMount(async () => {
 	align-items: center;
 	justify-content: row;
 	justify-content: center;
-	border: 1px solid grey;
 	border-radius: 25px;
 	box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 	padding: 1em;
