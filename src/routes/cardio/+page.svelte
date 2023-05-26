@@ -44,10 +44,16 @@ img {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-    :global(body){
+    p {
         text-align: left;
         font-family: 'Futura';
         font-size: xx-large;
+        background-color: #dbf0f0;
+    }
+    li {
+        font-size: xx-large;
+        text-align: left;
+
     }
 
 </style>

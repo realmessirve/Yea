@@ -47,7 +47,7 @@ onMount(async () => {
   <div class="box">
     <slot>
       <img src="Blog-Deadlifting-Male_1800x672_1200x672_acf_cropped.jpg" alt="styrke" height="230px">
-      <div class="overlay"><a href="./styrke">Styrketrening</a></div>
+      <div class="overlay"><a href="./styrketrening">Styrketrening</a></div>
     </slot>
   </div>
   <div class="box">
@@ -63,7 +63,7 @@ onMount(async () => {
     </slot>
   </div>
 </div>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos culpa eum, ratione voluptas corrupti molestias aperiam dolorum esse labore iusto ad rem animi velit. Asperiores placeat laborum recusandae aliquam ex.</p>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos culpa eum, ratione voluptas corrupti molestias aperiam dolorum esse labore iusto ad rem animi velit. Asperiores placeat laborum recusandae aliquam ex.
 <Footer />
 
 <style lang="scss">
@@ -109,6 +109,15 @@ a {
 	text-align: center;
 	background-color: #dbf0f0;
   font-family: 'Futura';
+}
+img {
+  border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+h1 {
+  text-align: center;
 }
 
 </style>
