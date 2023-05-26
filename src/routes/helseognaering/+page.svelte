@@ -42,7 +42,7 @@ import Footer from '../../components/Footer.svelte';
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    transition: transform 0.7s ease;
+    transition: transform 1s ease;
     transition: opacity 0.7s ease;
  }
 
@@ -52,3 +52,4 @@ img:hover {
   
 }
 </style>
+

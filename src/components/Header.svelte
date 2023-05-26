@@ -19,7 +19,7 @@
 		border-bottom-left-radius: 10px;
 		border-bottom-right-radius: 15px;
 		font-family: 'Futura';
-		transition: transform 0.7s ease;
+		transition: transform 0.8s ease;
 
 	}
 	header :hover{
