@@ -1,7 +1,5 @@
 
 <script>
-// Import the necessary libraries
-import { onMount } from 'svelte';
 // header import
  import Header from '../components/Header.svelte';
  import Footer from '../components/Footer.svelte';
