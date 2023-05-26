@@ -17,7 +17,8 @@
         
         And what’s important for everyone to know is that strength training is not just for bodybuilders and professional athletes. “Strength training is critical, not just for looking good and being strong, but for preventing the diseases of aging,” says Gabrielle Lyon, DO, a functional medicine practitioner in New York City and the founder of the Institute for Muscle-Centric Medicine, a functional medicine practice.
         
-        Regular strength or resistance training is good for people of all ages and fitness levels to help prevent the natural loss of lean muscle mass that comes with aging (the medical term for this loss is sarcopenia), per the Cleveland Clinic. It can also benefit people with chronic health conditions, like obesity, diabetes, or a heart condition, according to a research review published in 2019.</p>
+        Regular strength or resistance training is good for people of all ages and fitness levels to help prevent the natural loss of lean muscle mass that comes with aging (the medical term for this loss is sarcopenia), per the Cleveland Clinic. It can also benefit people with chronic health conditions, like obesity, diabetes, or a heart condition, according to a research review published in 2019.
+    if you are looking for some ways you can do your </p>
 
   <Footer />
 

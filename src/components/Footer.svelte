@@ -1,5 +1,5 @@
 <footer>
-    <p>Daniel 2021-2023</p>
+    <p>Daniel 2021-2023, trenger du hjelp? kontakt oss her:</p>
 </footer>
 
 

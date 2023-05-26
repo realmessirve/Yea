@@ -5,37 +5,8 @@ import { onMount } from 'svelte';
 // header import
  import Header from '../components/Header.svelte';
  import Footer from '../components/Footer.svelte';
-
-
-// Declare a variable to store the fetched data
-let exercises = [];
-// Fetch data from the ExerciseAPI3
-onMount(async () => {
-  const apiKey = '9a9af9e7a1msh02f136f7f0af882p151f13jsncb71b401ede3'; 
-  const url = 'https://exerciseapi.p.rapidapi.com/exercises'; // API endpoint
-
-  try {
-    const response = await fetch(url, {
-      headers: {
-        'X-RapidAPI-Key': '9a9af9e7a1msh02f136f7f0af882p151f13jsncb71b401ede3',
-
-      }
-    });
-
-    if (response.ok) {
-      exercises = await response.json();
-    } else {
-      console.error('Error:', response.status);
-    }
-  } catch (error) {
-    console.error('Error:', error);
-  }
-});
 </script>
-
 <!-- selve koden--> 
-
-
 <Header />
 <br>
 <br>
@@ -63,7 +34,7 @@ onMount(async () => {
     </slot>
   </div>
 </div>
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos culpa eum, ratione voluptas corrupti molestias aperiam dolorum esse labore iusto ad rem animi velit. Asperiores placeat laborum recusandae aliquam ex.
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos culpa eum, ratione voluptas corrupti molestias aperiam dolorum esse labore iusto ad rem animi velit. Asperiores placeat laborum recusandae aliquam ex.</p>
 <Footer />
 
 <style lang="scss">
@@ -79,6 +50,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos culpa eum,
 	font-family: 'Futura';
 	background-color: #5ebfb9;
   position: relative;
+  overflow: hidden;
 
 }
 .container {
@@ -99,10 +71,21 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos culpa eum,
   font-weight: bold;
   color: #000;
   z-index: 2;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
+.box:hover img {
+  
+  transform: scale(1.04);
+}
+.box:hover .overlay {
+
+  transform: translate(-50%, -50%) scale(1.04);
+}
+
+
 a {
   color: #5ebfb9;
-
+  
 }
 
 :global(body){
@@ -110,14 +93,23 @@ a {
 	background-color: #dbf0f0;
   font-family: 'Futura';
 }
+
 img {
-  border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  border-radius: 10px;
+  transition: opacity 0.7s ease;
+  transition: transform 0.7s ease;
 }
-h1 {
+
+img:hover {
+  opacity: 0.5;
+  transform: scale(1.04);
+  
+}
+p {
+  display: flex;
   text-align: center;
+  font-size: x-large;
+  line-height: 60px;
 }
 
 </style>
