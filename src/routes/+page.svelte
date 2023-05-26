@@ -32,7 +32,7 @@
     </slot>
   </div>
 </div>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos culpa eum, ratione voluptas corrupti molestias aperiam dolorum esse labore iusto ad rem animi velit. Asperiores placeat laborum recusandae aliquam ex.</p>
+<p>Denne nettsiden tilbyr informasjon og debunker falsk fakta. Ingen betalinger heller. Les i vei!</p>
 <Footer />
 
 <style lang="scss">
@@ -71,16 +71,12 @@
   z-index: 2;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.box:hover img {
-  
+.box:hover img { 
   transform: scale(1.04);
 }
 .box:hover .overlay {
-
   transform: translate(-50%, -50%) scale(1.04);
 }
-
-
 a {
   color: #5ebfb9;
   
@@ -104,8 +100,9 @@ img:hover {
   
 }
 p {
+  align-items: center;
   display: flex;
-  text-align: center;
+  text-align: center; 
   font-size: x-large;
   line-height: 60px;
 }
