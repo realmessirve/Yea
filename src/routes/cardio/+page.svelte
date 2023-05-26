@@ -49,6 +49,7 @@ img {
         font-family: 'Futura';
         font-size: xx-large;
         background-color: #dbf0f0;
+        line-height: 70px;
     }
     li {
         font-size: xx-large;

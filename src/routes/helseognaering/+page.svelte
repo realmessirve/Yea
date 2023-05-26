@@ -23,6 +23,8 @@ import Footer from '../../components/Footer.svelte';
     Let’s take a look at the claims of some of the most popular fad diets and consider how effective they really are.</p>
     <h1>sjekk ut helse brosjyren vår!</h1>
     <a href="https://xd.adobe.com/view/187bee54-e28c-44c7-a4f1-20f0a8de5bfd-4d28/?fullscreen"><img src="/Skjermbilde 2023-05-26 kl. 10.44.58.png" alt="brosjyre" height="900px"></a>
+    <br>
+    <br>
 <Footer />
 
 <style lang="scss">
@@ -38,5 +40,15 @@ import Footer from '../../components/Footer.svelte';
  }
  img {
     flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    transition: transform 0.7s ease;
+    transition: opacity 0.7s ease;
  }
+
+img:hover {
+  opacity: 0.5;
+  transform: scale(1.04);
+  
+}
 </style>

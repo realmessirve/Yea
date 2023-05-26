@@ -106,5 +106,10 @@ p {
   font-size: x-large;
   line-height: 60px;
 }
+:global(h1) {
+        text-align: center;
+        font-family: 'Futura'
+
+    }
 
 </style>

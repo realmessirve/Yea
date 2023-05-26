@@ -1,10 +1,10 @@
 <footer>
-    <p>Daniel 2021-2023, trenger du hjelp? kontakt oss her:</p>
+    <p>Daniel 2021-2023, trenger du hjelp? kontakt oss <a href="src/routes/Hjelp/+page.svelte">her</a>:</p>
 </footer>
 
 
 <style>
-    footer {
+  footer {
   width: 100%;
   height: 5rem;
   background-color: #51beacca;

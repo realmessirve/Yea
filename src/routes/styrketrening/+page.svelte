@@ -68,15 +68,11 @@
     img {
         border-radius: 10px;
     }
-    h1 {
-        text-align: center;
-        font-family: 'Futura'
-
-    }
+  
     li {
         font-family: 'Futura';
         font-size: larger;
         flex: start;
     }
+
   </style>
-  
