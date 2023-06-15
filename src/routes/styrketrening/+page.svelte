@@ -1,5 +1,7 @@
 <Header />
 <script>
+// @ts-nocheck
+
     //chatGPT API request kode
     import Header from "../../components/Header.svelte";
     import Footer from "../../components/Footer.svelte";
@@ -12,7 +14,16 @@
   const apiUrl = 'https://wger.de/api/v2/exercise/';
 
   const responseData = writable(null);
-
+  let tall1 = 10
+  let tall2 = 20
+  let tall3 = tall1+tall2
+  if(tall3<20){
+    console.log("tall3 er mindre enn 20")
+    
+  }
+  else {
+    console.log("tall3 er større enn 20")
+  }
   onMount(async () => {
     try {
       const response = await axios.get(apiUrl, {
